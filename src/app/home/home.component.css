@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: inherit;
+
+}
+.left-panel {
+  grid-column: span 7;
+  background-color: green;
+}
+.right-panel {
+  grid-column: span 5;
+  background-color: red;
+}
