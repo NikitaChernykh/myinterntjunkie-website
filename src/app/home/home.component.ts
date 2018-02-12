@@ -16,6 +16,7 @@ import {trigger,style,transition, animate,keyframes,query, stagger} from '@angul
         ])
     ]),
     trigger('fadeInAnimation2', [
+        // route 'enter' transition
         transition(':enter', [
           animate('1.5s ease-in', keyframes([
             style({opacity: 0, transform: 'translateY(-75%)', offset: 0}),
@@ -23,11 +24,13 @@ import {trigger,style,transition, animate,keyframes,query, stagger} from '@angul
             style({opacity: 1, transform: 'translateY(0)',     offset: 1.0}),
             ]))
         ])
-    ]);
+    ]),
   ]
 })
 export class HomeComponent implements OnInit {
+
   constructor() { }
+
   ngOnInit() {
   }
 
