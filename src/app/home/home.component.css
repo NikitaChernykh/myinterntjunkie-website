@@ -6,18 +6,23 @@
   font-family: Lato,sans-serif;
 }
 .left-panel {
-  text-align: center;
-  grid-column: span 7;
-  background-color: #1c2340;
+  display: none;
 }
 .right-panel {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas:
+  ". . ."
+  ". e ."
+  ". . .";
   text-align: center;
-  grid-column: span 5;
+  grid-column: span 12;
   background-color: #de3f53;
   color: white;
 }
 .right-panel h2{
-  margin-bottom: 5%;
+  margin: auto  auto 10% auto;
 }
 .primary-action{
   border-radius: 50px;
@@ -27,11 +32,61 @@
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
+  margin: auto;
+  white-space: nowrap;
 }
 .logo{
-  margin: 23% auto 0 auto;
+  width: 100%;
+  margin: 0 auto 0 auto;
 }
-.exmaple{
-  width: 900px;
-  margin: 2% auto;
+
+.btn-wrap{
+  display: flex;
+}
+.main{
+  grid-area : e;
+}
+/* For large screens */
+@media (min-width: 650px) {
+  .exmaple{
+    width: 90%;
+    margin: 2% auto;
+  }
+  .left-panel {
+    display: block;
+    text-align: center;
+    grid-column: span 7;
+    background-color: #1c2340;
+  }
+  .right-panel h2{
+    margin-bottom: 5%;
+  }
+  .right-panel {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    ". . . . . ."
+    ". e e e e ."
+    ". . . . . .";
+    text-align: center;
+    grid-column: span 5;
+    background-color: #de3f53;
+    color: white;
+  }
+  .main{
+    grid-area : e;
+  }
+  .primary-action{
+    border-radius: 50px;
+    background-color: #1c2340;
+    color: white;
+    padding: 16px 40px 16px 40px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .btn-wrap{
+    display: flex;
+  }
 }
