@@ -5,6 +5,12 @@
   height: 100vh;
   font-family: Lato,sans-serif;
 }
+.mob-monster-img{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 .left-panel {
   display: none;
 }
@@ -48,6 +54,9 @@
 }
 /* For large screens */
 @media (min-width: 650px) {
+  .mob-monster-img{
+    display: none;
+  }
   .exmaple{
     width: 90%;
     margin: 2% auto;
