@@ -58,14 +58,18 @@
     display: none;
   }
   .exmaple{
-    width: 90%;
-    margin: 2% auto;
+    outline: 3px solid gold;
+    margin: auto;
+    display: table;
+    height:auto;
+    width: 100%;
   }
   .left-panel {
     display: block;
     text-align: center;
     grid-column: span 7;
     background-color: #1c2340;
+
   }
   .right-panel h2{
     margin-bottom: 5%;
