@@ -48,7 +48,9 @@ button{
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
-
+}
+h2{
+  margin-bottom: 10%;
 }
 .home-left{
   display: none;
@@ -74,7 +76,7 @@ button{
   color: #fff;
 }
 .mob-monster-img{
-  margin-top:15%;
+  margin-top:12%;
 }
 .hidden-block{
   display: none;
@@ -82,6 +84,7 @@ button{
 @media(min-width: 930px){
   .hidden-block{
     display: block;
+    height:20px;
   }
   .home{
     grid-template-columns: 7fr 5fr;
