@@ -1,26 +1,22 @@
-// 1. Import the initial variables
 @import "./node_modules/bulma/sass/utilities/initial-variables";
 @import "./node_modules/bulma/sass/utilities/functions";
 
-// 2. Set your own initial variables
-// Update blue
-$blue: #72d0eb;
-// Add pink and its invert
-$pink: #ffb3b3;
-$pink-invert: #fff;
-// Add a serif family
-$family-serif: "Merriweather", "Georgia", serif;
 
-// 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
-// Use the existing orange as the danger color
+//Internet Junkie Theme Colors
+$my-blue: #1c2340;
+$my-red: #de3f54;
+//$my-red-invert: findColorInvert($my-red);
+
+// Internet Junkie Font
+$internet-junkie-serif: "Merriweather", "Georgia", serif;
+
+// Overriding Bulma styles
+$primary: $my-red;
+$info: $my-blue;
 $danger: $orange;
-// Use the new serif family
-$family-primary: $family-serif;
+$family-primary: $internet-junkie-serif;
 
-// 4. Setup your Custom Colors
+// More custom styles
 $linkedin: #0077b5;
 $linkedin-invert: findColorInvert($linkedin);
 $twitter: #55acee;
@@ -28,7 +24,7 @@ $twitter-invert: findColorInvert($twitter);
 $github: #333;
 $github-invert: findColorInvert($github);
 
-// 5. Add new color variables to the color map.
+// Adding new color variables to the color map.
 @import "./node_modules/bulma/sass/utilities/derived-variables";
 $addColors: (
   "twitter":($twitter, $twitter-invert),
@@ -37,5 +33,5 @@ $addColors: (
 );
 $colors: map-merge($colors, $addColors);
 
-// 6. Import the rest of Bulma
+// Importing the rest of Bulma
 @import "./node_modules/bulma/bulma";

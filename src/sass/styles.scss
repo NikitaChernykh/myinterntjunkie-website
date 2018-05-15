@@ -1,5 +1,6 @@
 @import './mystyles';
 
+//CSS GRID
 .hidden{
   display: none;
 }
@@ -26,7 +27,7 @@ button{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100%;
-  background-color: #1c2340;
+  background-color: $info;
   align-items: center;
   justify-items: center;
   .home-cta{
@@ -36,14 +37,9 @@ button{
   }
 }
 
-.logo{
-  /* outline: 1px solid red; */
-  width: 100%;
-}
-
 .primary-action{
   border-radius: 50px;
-  background-color: #de3f53;
+  background-color: $primary;
   color: white;
   padding: 16px 5% 16px 5%;
   text-decoration: none;
@@ -57,31 +53,11 @@ h2{
   display: none;
 }
 
-.about{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: auto;
-  /* grid-column-gap: 20px; */
-  /* grid-row-gap:20px; */
-  /* grid-gap:20px; */
-}
 
-.about .section{
-  background-color: grey;
-  padding: 10px;
-}
 
-.section div{
-  background-color: black;
-  padding: 10px;
-  color: #fff;
-}
-.mob-monster-img{
-  margin-top:12%;
-}
-.hidden-block{
-  display: none;
-}
+
+
+
 @media(min-width: 930px){
   .hidden-block{
     display: block;
@@ -97,7 +73,7 @@ h2{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100%;
-    background-color: #de3f53;
+    background-color: $primary;
     align-items: center;
     justify-items: center;
   }
@@ -111,13 +87,5 @@ h2{
     text-align: center;
     /* background: green; */
     width:70%;
-  }
-
-  .logo{
-    /* outline: 1px solid red; */
-    width: 100%;
-  }
-  .home-left .home-image{
-    /* background: #fafafa; */
   }
 }
