@@ -5,12 +5,16 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { FeaturesComponent } from './features/features.component';
+import { SubscribeComponent } from './subscribe/subscribe.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    FeaturesComponent,
+    SubscribeComponent
   ],
   imports: [
     BrowserModule,

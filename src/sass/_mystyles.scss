@@ -5,6 +5,7 @@
 //Internet Junkie Theme Colors
 $my-blue: #1c2340;
 $my-red: #de3f54;
+$secondary-400: #566589;
 //$my-red-invert: findColorInvert($my-red);
 
 // Internet Junkie Font
@@ -12,6 +13,7 @@ $internet-junkie-serif: "Merriweather", "Georgia", serif;
 
 // Overriding Bulma styles
 $primary: $my-red;
+
 $info: $my-blue;
 $danger: $orange;
 $family-primary: $internet-junkie-serif;
@@ -23,7 +25,12 @@ $twitter: #55acee;
 $twitter-invert: findColorInvert($twitter);
 $github: #333;
 $github-invert: findColorInvert($github);
-
+$input-focus-color: $primary;
+$input-focus-border-color: $primary;
+$input-icon-active-color:$primary;
+input[type=text]:focus{
+  border: 1px solid $primary !important;
+}
 // Adding new color variables to the color map.
 @import "./node_modules/bulma/sass/utilities/derived-variables";
 $addColors: (
