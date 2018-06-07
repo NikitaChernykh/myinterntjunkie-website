@@ -3,6 +3,14 @@
 .subscribe{
     background-color: $secondary-400;
     .columns{
-        background-color: $secondary-400;
+      background-color: $secondary-400;
     }
+    input, button{
+      font-family: BlinkMacSystemFont;
+      font-weight: 400;
+    }
+    .column:nth-child(2){
+      margin-top: 10px;
+    }
+
 }
